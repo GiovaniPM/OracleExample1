@@ -97,7 +97,7 @@ object Form1: TForm1
     DrawFullLine = False
     FocusColor = clRed
     SelectedColor = clHighlight
-    GridLineStyle = psSolid
+    GridLineStyle = psDot
     DataSource = DS
     Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
     TabOrder = 1
