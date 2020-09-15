@@ -26,6 +26,21 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="pl_RX"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_SpkToolBar"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_VirtualTreesExtra"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_ZMSQL"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_ZeosDBO"/>
+      </Item>
+      <Item>
         <PackageName Value="adFCL"/>
       </Item>
       <Item>

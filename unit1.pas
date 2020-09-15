@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, oracleconnection, SQLDB, DB, Forms, Controls, Graphics,
-  Dialogs, DBGrids, DBCtrls, BrookFCLEventLogHandler, ZMQueryBuilder, ZDataset;
+  Dialogs, DBGrids, DBCtrls, BrookFCLEventLogHandler, ZMQueryBuilder,
+  vte_initree, SpkToolbar, RxDBGrid, ZDataset;
 
 type
 
@@ -16,8 +17,8 @@ type
     Connect: TOracleConnection;
     DBNavigator1: TDBNavigator;
     DS: TDataSource;
-    DBGrid1: TDBGrid;
     Query: TSQLQuery;
+    RxDBGrid1: TRxDBGrid;
     Transaction: TSQLTransaction;
   private
 
