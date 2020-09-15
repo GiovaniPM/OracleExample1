@@ -19,7 +19,7 @@ First example to how access Oracle database using the IDE [CodeTyphon](https://w
 
 ## The example
 ### Design
-![Unit1.frm](./Unit1.png)
+![Unit1.frm](https://raw.githubusercontent.com/GiovaniPM/OracleExample1/master/Unit1.PNG)
 ### Code
 - File tree
 ```
