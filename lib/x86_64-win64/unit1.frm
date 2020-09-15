@@ -11,7 +11,7 @@ object Form1: TForm1
     Left = 8
     Height = 40
     Top = 8
-    Width = 360
+    Width = 400
     BevelOuter = bvNone
     ChildSizing.EnlargeHorizontal = crsScaleChilds
     ChildSizing.EnlargeVertical = crsScaleChilds
@@ -20,14 +20,14 @@ object Form1: TForm1
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 100
     ClientHeight = 40
-    ClientWidth = 360
+    ClientWidth = 400
     DataSource = DS
     Options = []
     TabOrder = 0
   end
   object RxDBGrid1: TRxDBGrid
     Left = 8
-    Height = 332
+    Height = 520
     Top = 72
     Width = 784
     ColumnDefValues.BlobText = '(blob)'
@@ -102,6 +102,36 @@ object Form1: TForm1
     Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
     TabOrder = 1
   end
+  object ButtonPanel1: TButtonPanel
+    Left = 6
+    Height = 34
+    Top = 560
+    Width = 788
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 2
+  end
+  object ButtonPanel2: TButtonPanel
+    Left = 6
+    Height = 34
+    Top = 520
+    Width = 788
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 3
+  end
   object Connect: TOracleConnection
     Connected = True
     LoginPrompt = False
@@ -167,6 +197,12 @@ object Form1: TForm1
       '    C##GIOVANIPM.F4101'
       'order by'
       '    imitm'
+    )
+    UpdateSQL.Strings = (
+      'update F4101'
+      'set'
+      'where'
+      '   (IMITM = :OLD_IMITM)'
     )
     Params = <>
     Macros = <>

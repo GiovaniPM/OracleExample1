@@ -26,6 +26,21 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="pl_Barcodes"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_BGRAcontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="lz_PlotFunction"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_LuiControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_VisualPlanIt"/>
+      </Item>
+      <Item>
         <PackageName Value="pl_RX"/>
       </Item>
       <Item>

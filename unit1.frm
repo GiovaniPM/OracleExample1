@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 486
+  Left = 100
   Height = 600
-  Top = 156
+  Top = 85
   Width = 800
   Caption = 'Form1'
   ClientHeight = 600
@@ -167,6 +167,12 @@ object Form1: TForm1
       '    C##GIOVANIPM.F4101'
       'order by'
       '    imitm'
+    )
+    UpdateSQL.Strings = (
+      'update F4101'
+      'set'
+      'where'
+      '   (IMITM = :OLD_IMITM)'
     )
     Params = <>
     Macros = <>
