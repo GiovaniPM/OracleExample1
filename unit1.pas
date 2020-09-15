@@ -6,20 +6,18 @@ interface
 
 uses
   Classes, SysUtils, oracleconnection, SQLDB, DB, Forms, Controls, Graphics,
-  Dialogs, DBGrids, FZDB, mooncomp, BGRAButton, BCRadialProgressBar, BCPanel,
-  ZDataset;
+  Dialogs, DBGrids, BrookFCLEventLogHandler;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    DSOracle: TDataSource;
+    Connect: TOracleConnection;
+    DS: TDataSource;
     DBGrid1: TDBGrid;
-    Oracle: TOracleConnection;
-    SQLOracle: TSQLQuery;
-    TraOracle: TSQLTransaction;
-    procedure FormCreate(Sender: TObject);
+    Query: TSQLQuery;
+    Transaction: TSQLTransaction;
   private
 
   public
@@ -32,13 +30,6 @@ var
 implementation
 
 {$R *.frm}
-
-{ TForm1 }
-
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-
-end;
 
 end.
 
