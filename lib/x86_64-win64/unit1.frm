@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 486
+  Left = 100
   Height = 600
-  Top = 156
+  Top = 85
   Width = 800
   Caption = 'Form1'
   ClientHeight = 600
@@ -101,36 +101,6 @@ object Form1: TForm1
     DataSource = DS
     Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
     TabOrder = 1
-  end
-  object ButtonPanel1: TButtonPanel
-    Left = 6
-    Height = 34
-    Top = 560
-    Width = 788
-    OKButton.Name = 'OKButton'
-    OKButton.DefaultCaption = True
-    HelpButton.Name = 'HelpButton'
-    HelpButton.DefaultCaption = True
-    CloseButton.Name = 'CloseButton'
-    CloseButton.DefaultCaption = True
-    CancelButton.Name = 'CancelButton'
-    CancelButton.DefaultCaption = True
-    TabOrder = 2
-  end
-  object ButtonPanel2: TButtonPanel
-    Left = 6
-    Height = 34
-    Top = 520
-    Width = 788
-    OKButton.Name = 'OKButton'
-    OKButton.DefaultCaption = True
-    HelpButton.Name = 'HelpButton'
-    HelpButton.DefaultCaption = True
-    CloseButton.Name = 'CloseButton'
-    CloseButton.DefaultCaption = True
-    CancelButton.Name = 'CancelButton'
-    CancelButton.DefaultCaption = True
-    TabOrder = 3
   end
   object Connect: TOracleConnection
     Connected = True
