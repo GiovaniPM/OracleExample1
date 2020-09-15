@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, oracleconnection, SQLDB, DB, Forms, Controls, Graphics,
-  Dialogs, DBGrids, BrookFCLEventLogHandler;
+  Dialogs, DBGrids, DBCtrls, BrookFCLEventLogHandler, ZMQueryBuilder, ZDataset;
 
 type
 
@@ -14,6 +14,7 @@ type
 
   TForm1 = class(TForm)
     Connect: TOracleConnection;
+    DBNavigator1: TDBNavigator;
     DS: TDataSource;
     DBGrid1: TDBGrid;
     Query: TSQLQuery;

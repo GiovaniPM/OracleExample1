@@ -8,14 +8,32 @@ object Form1: TForm1
   ClientWidth = 800
   LCLVersion = '7.2'
   object DBGrid1: TDBGrid
-    Left = 0
-    Height = 520
-    Top = 72
-    Width = 800
+    Left = 8
+    Height = 528
+    Top = 64
+    Width = 784
     Color = clWindow
     Columns = <>
     DataSource = DS
     TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Height = 40
+    Top = 8
+    Width = 360
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 40
+    ClientWidth = 360
+    DataSource = DS
+    Options = []
+    TabOrder = 1
   end
   object Connect: TOracleConnection
     Connected = True
@@ -26,14 +44,14 @@ object Form1: TForm1
     Transaction = Transaction
     UserName = 'C##GIOVANIPM'
     HostName = 'localhost'
-    Left = 16
-    Top = 16
+    Left = 592
+    Top = 8
   end
   object Transaction: TSQLTransaction
     Active = True
     Database = Connect
-    Left = 72
-    Top = 16
+    Left = 648
+    Top = 8
   end
   object Query: TSQLQuery
     IndexName = 'DEFAULT_ORDER'
@@ -85,12 +103,12 @@ object Form1: TForm1
     )
     Params = <>
     Macros = <>
-    Left = 128
-    Top = 16
+    Left = 704
+    Top = 8
   end
   object DS: TDataSource
     DataSet = Query
-    Left = 184
-    Top = 16
+    Left = 760
+    Top = 8
   end
 end
