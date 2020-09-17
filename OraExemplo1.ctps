@@ -24,10 +24,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos Y="36"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="86" Y="20"/>
         <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\typhon\components\pl_LuiControls\source\luicomponents\sqlclientbase.pas"/>
